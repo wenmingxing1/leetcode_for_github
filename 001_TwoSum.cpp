@@ -20,6 +20,8 @@ public:
 };
 
 /*=================利用map=====================*/
+//map为关联容器，其中是一个key-value的pair。key为索引。
+
 class Solution {
 public:
     vector<int> twoSum(vector<int> &numbers, int target)
@@ -29,14 +31,14 @@ public:
             map<int, int> index;
             for (int i = 0; i < n; i++)
             {
-                if (index.count(numbers[i]) != 0)
+                if (index.count(numbers[i]) != 0)   //index中numbers[i]出现的次数
                 {
                     // if exists
-                    result.push_back(index[numbers[i]] + 1);
-                    result.push_back(i + 1);
+                    result.push_back(index[numbers[i]]);
+                    result.push_back(i);
                     break;
                 }
-                index[target - numbers[i]] = i;
+                index[target - numbers[i]] = i;     //不存在的话就向index中赋值
             }
             return result;
     }
@@ -74,10 +76,10 @@ class Solution
             int sz = numbers.size();
             int left = 0, right = sz - 1, sum = 0;
 
-            vector<int> sorted (numbers);
-            std::sort(sorted.begin(), sorted.end());
+            vector<int> sorted (numbers);   //将numbers赋值到sorted中。用于排序数组
+            std::sort(sorted.begin(), sorted.end());    //对sorted进行排序
 
-            vector<int> index;
+            vector<int> index;      //存储结果
             while (left < right)
             {
                 sum = sorted[left] + sorted[right];
@@ -87,9 +89,9 @@ class Solution
                     for (int i = 0; i < sz; i++)
                     {
                         if (numbers[i] == sorted[left])
-                            index.push_back(i + 1);
+                            index.push_back(i);     //将left的索引添加到index中
                         else if (numbers[i] == sorted[right])
-                            index.push_back(i + 1);
+                            index.push_back(i);         //将right的索引到index中。
                         if (index.size() == 2)
                             return index;
                     }
@@ -103,8 +105,7 @@ class Solution
                     left++;
                 }
             }
-            // Program never go here, because
-            // "each input would have exactly one solution"
+
         }
 };
 
