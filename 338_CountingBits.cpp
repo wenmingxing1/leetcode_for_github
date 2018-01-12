@@ -1,3 +1,4 @@
+//剑指offer第十题，记住n与n-1与会让n的最右边一个1变为0
 class Solution {
 public:
     vector<int> countBits(int num) {
