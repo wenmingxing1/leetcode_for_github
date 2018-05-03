@@ -58,14 +58,14 @@ public:
         if (root == nullptr) return 0;
         int res = 1;
         queue<pair<TreeNode*, int>> curLevel, nextLevel;
-        curLevel.push(root, 0);
+        curLevel.emplace(root, 0);
+
         while (!curLevel.empty()) {
-            res = res > (curLevel.back().second - curLevel.front().second + 1) ? res :
-                (curLevel.back().second - curLevel.front().second + 1);
-            while (!cur.empty()) {
-                auto p = curLevel.front().first;
-                if (p.first->left) nextLevel.push(p.first->left, 2*p.second + 1 );
-                if (p.first->second) nextLevel.push(p.first->right, 2*p.second + 2);
+            res = res > (curLevel.back().second - curLevel.front().second + 1) ? res : (curLevel.back().second - curLevel.front().second + 1);
+            while (!curLevel.empty()) {
+                auto p = curLevel.front();
+                if (p.first->left) nextLevel.emplace(p.first->left, 2*p.second + 1 );
+                if (p.first->right) nextLevel.emplace(p.first->right, 2*p.second + 2);
                 curLevel.pop();
             }
             swap(curLevel, nextLevel);
