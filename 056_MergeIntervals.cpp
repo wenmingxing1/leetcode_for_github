@@ -15,7 +15,7 @@ public:
     vector<Interval> merge(vector<Interval>& intervals) {
         vector<Interval> res;
 
-        //首先对intervals进行排序
+        //脢脳脧脠露脭intervals陆酶脨脨脜脜脨貌
         sort(intervals.begin(), intervals.end(), [](Interval& a, Interval& b){return a.start < b.start;});
         res.push_back(intervals[0]);
 
