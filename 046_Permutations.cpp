@@ -1,4 +1,4 @@
-//½£Ö¸offer28Ìâ£¬×Ö·û´®ÅÅÁĞ
+//å‰‘æŒ‡offer28é¢˜ï¼Œå­—ç¬¦ä¸²æ’åˆ—
 class Solution {
 public:
     //vector<vector<int>> res;
@@ -9,7 +9,7 @@ public:
     }
 private:
     void permuteCore(vector<int>& nums, int begin, vector<vector<int>>& res){
-        if (begin == nums.size()){  //µ±ÏÂÒ»ÂÖµİ¹éÖĞµÄbegin+1==sizeµÄÊ±ºò£¬Ñ¹Èënums
+        if (begin == nums.size()){  //å½“ä¸‹ä¸€è½®é€’å½’ä¸­çš„begin+1==sizeçš„æ—¶å€™ï¼Œå‹å…¥nums
             res.push_back(nums);
             return;
         }
