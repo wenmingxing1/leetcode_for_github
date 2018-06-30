@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//ÏÈÕÒµ½Ğı×ªµã£¬ÔÙÍ¨¹ı¶ş·Ö²éÕÒ
+//å…ˆæ‰¾åˆ°æ—‹è½¬ç‚¹ï¼Œå†é€šè¿‡äºŒåˆ†æŸ¥æ‰¾
 class Solution1 {
 public:
     int search(vector<int>& nums, int target) {
@@ -51,7 +51,7 @@ private:
     }
 };
 
-//Ö±½ÓÓ¦ÓÃ¶ş·Ö²éÕÒ£¬ÔÚ²éÕÒ¹ı³ÌÖĞÅĞ¶ÏÔÚÄÄÒ»²¿·Ö
+//ç›´æ¥åº”ç”¨äºŒåˆ†æŸ¥æ‰¾ï¼Œåœ¨æŸ¥æ‰¾è¿‡ç¨‹ä¸­åˆ¤æ–­åœ¨å“ªä¸€éƒ¨åˆ†
 class Solution2 {
 public:
     int search(vector<int>& nums, int target) {
@@ -63,21 +63,21 @@ public:
             mid = left + (right - left) / 2;
             if (nums[mid] == target) return mid;
 
-            //midÔÚ×ó°ë²¿·Ö
+            //midåœ¨å·¦åŠéƒ¨åˆ†
             if (nums[mid] > nums[right]) {
                 if (target < nums[mid] && target >= nums[left])
                     right = mid - 1;
                 else
                     left = mid + 1;
             }
-            //midÔÚÓÒ°ë²¿·Ö
+            //midåœ¨å³åŠéƒ¨åˆ†
             else if (nums[mid] < nums[left]) {
                 if (target > nums[mid] && target <= nums[right])
                     left = mid + 1;
                 else
                     right = mid - 1;
             }
-            //ÎŞĞı×ª£¬Ö±½Ó¶ş·Ö
+            //æ— æ—‹è½¬ï¼Œç›´æ¥äºŒåˆ†
             else {
                 if (target < nums[mid])
                     right = mid - 1;
