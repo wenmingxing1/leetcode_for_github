@@ -8,7 +8,7 @@
  */
 class Solution {
 public:
-    //½£Ö¸offerÉÏÓÐÀàËÆÌâ£¬½«È«²¿ÖØ¸´ÔªËØ¶¼É¾³ý£¬¶ø´ËÌâÐèÒªÔÚÖØ¸´ÔªËØÖÐÁ÷Ò»¸ö£¬ËùÒÔ²»ÐèÒªÔÚheadÇ°ÉèÖÃfirst
+    //å‰‘æŒ‡offerä¸Šæœ‰ç±»ä¼¼é¢˜ï¼Œå°†å…¨éƒ¨é‡å¤å…ƒç´ éƒ½åˆ é™¤ï¼Œè€Œæ­¤é¢˜éœ€è¦åœ¨é‡å¤å…ƒç´ ä¸­æµä¸€ä¸ªï¼Œæ‰€ä»¥ä¸éœ€è¦åœ¨headå‰è®¾ç½®first
     ListNode* deleteDuplicates(ListNode* head) {
 
         ListNode* pNode = head;
@@ -16,7 +16,7 @@ public:
         while (pNode != NULL && pNode->next != NULL){
             if (pNode->val == pNode->next->val){
                 int val = pNode->val;
-                //Ìø¹ýÖØ¸´ÔªËØ
+                //è·³è¿‡é‡å¤å…ƒç´ 
                 while (pNode != NULL && val == pNode->val){
                     pNode = pNode->next;
                 }
