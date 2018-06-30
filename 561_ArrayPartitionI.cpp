@@ -1,4 +1,4 @@
-//охеепРё╛тыя║фФйЩн╩жцоЮ╪с
+//Е┘┬Ф▌▓Е╨▐О╪▄Е├█И─┴Е╔┤Ф∙╟Д╫█Г╫╝Г⌡╦Е┼═
 #include<iostream>
 #include<vector>
 #include<stdlib.h>
