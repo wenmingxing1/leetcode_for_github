@@ -1,4 +1,4 @@
-//½£Ö¸offer20Ìâ
+//å‰‘æŒ‡offer20é¢˜
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -10,7 +10,7 @@ public:
         int row = matrix.size();
         int col = matrix[0].size();
 
-        //Î¬»¤ËÄ¸ö±äÁ¿ÒÔÈ·¶¨±éÀú±ß½ç
+        //ç»´æŠ¤å››ä¸ªå˜é‡ä»¥ç¡®å®šéå†è¾¹ç•Œ
         int rowBegin = 0;
         int rowEnd = row - 1;
         int colBegin = 0;
@@ -18,16 +18,16 @@ public:
 
         while (rowBegin <= rowEnd && colBegin <= colEnd){
             for (int i = colBegin; i <= colEnd; ++i){
-                res.push_back(matrix[rowBegin][i]);     //ÏÖÔÚrowBegin==0
+                res.push_back(matrix[rowBegin][i]);     //ç°åœ¨rowBegin==0
             }
-            ++rowBegin;     //È¥³ıµÚ0ĞĞ£¬ÏÖÔÚrowBegin==1
+            ++rowBegin;     //å»é™¤ç¬¬0è¡Œï¼Œç°åœ¨rowBegin==1
 
             for (int i = rowBegin; i <= rowEnd; ++i){
-                res.push_back(matrix[i][colEnd]);   //ÏÖÔÚcolEndÎª×îºóÒ»ÁĞ
+                res.push_back(matrix[i][colEnd]);   //ç°åœ¨colEndä¸ºæœ€åä¸€åˆ—
             }
-            --colEnd;   //È¥³ı×îºóÒ»ÁĞ
+            --colEnd;   //å»é™¤æœ€åä¸€åˆ—
 
-            if (rowEnd >= rowBegin){    //·ÀÖ¹ÖØ¸´£¬ÀıÈçÖ»ÓĞÒ»ĞĞ
+            if (rowEnd >= rowBegin){    //é˜²æ­¢é‡å¤ï¼Œä¾‹å¦‚åªæœ‰ä¸€è¡Œ
                 for (int i = colEnd; i >= colBegin; --i){
                     res.push_back(matrix[rowEnd][i]);
                 }
