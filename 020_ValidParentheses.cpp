@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//使用栈的方法
+//浣跨敤鏍堢殑鏂规硶
 class Solution{
 public:
     bool isValid(const string& str) {
@@ -24,7 +24,7 @@ public:
     }
 };
 
-//不用栈的方法
+//涓嶇敤鏍堢殑鏂规硶
 class  Solution2 {
 public:
     bool isValid(const string& str) {
