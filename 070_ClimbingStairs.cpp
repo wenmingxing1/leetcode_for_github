@@ -1,7 +1,7 @@
-//½£Ö¸offerµÚ9Ìâ£¬ÕâÆäÊµÊÇÒ»¸öFibonacciÊıÁĞµÄÓ¦ÓÃ£¬ÒòÎªÖ»ÄÜ×ß1ºÍ2£¬ËùÒÔclimbStairs(n) = climbStairs(n-2) + climbStairs(n-1)
+//å‰‘æŒ‡offerç¬¬9é¢˜ï¼Œè¿™å…¶å®æ˜¯ä¸€ä¸ªFibonacciæ•°åˆ—çš„åº”ç”¨ï¼Œå› ä¸ºåªèƒ½èµ°1å’Œ2ï¼Œæ‰€ä»¥climbStairs(n) = climbStairs(n-2) + climbStairs(n-1)
 class Solution {
 public:
-    //µİ¹é²úÉúFibonacciÊıÁĞ£¬ÕâÑù»á³¬Ê±
+    //é€’å½’äº§ç”ŸFibonacciæ•°åˆ—ï¼Œè¿™æ ·ä¼šè¶…æ—¶
     /*
     int climbStairs(int n) {
         if (n == 1)
@@ -12,7 +12,7 @@ public:
     }
     */
 
-    //vector´æ´¢FibonacciÊıÁĞ£¬Ö±½Ó±éÀúµÃµ½ÏÂÒ»¸ö£¬±ÜÃâÉî¶Èµİ¹é
+    //vectorå­˜å‚¨Fibonacciæ•°åˆ—ï¼Œç›´æ¥éå†å¾—åˆ°ä¸‹ä¸€ä¸ªï¼Œé¿å…æ·±åº¦é€’å½’
     /*
     int climbStairs(int n) {
         vector<int> Fibonacci(n+1,0);
@@ -26,7 +26,7 @@ public:
     }
     */
 
-    //ÀûÓÃÑ­»·²úÉúFibonacci£¬²»ĞèÒª¶îÍâµÄ¿Õ¼ä
+    //åˆ©ç”¨å¾ªç¯äº§ç”ŸFibonacciï¼Œä¸éœ€è¦é¢å¤–çš„ç©ºé—´
     int climbStairs(int n) {
         int result[2] = {1, 2};
         if (n <= 2)
@@ -34,7 +34,7 @@ public:
         int FibN = 0;
         int i = 1;
         int j = 2;
-        for (int k = 3; k <= n; ++k) {  //Ïàµ±ÓÚË¢Ë«Ö¸Õë»¬¶¯
+        for (int k = 3; k <= n; ++k) {  //ç›¸å½“äºåˆ·åŒæŒ‡é’ˆæ»‘åŠ¨
             FibN = i+j;
             i = j;
             j = FibN;
