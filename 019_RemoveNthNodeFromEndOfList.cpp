@@ -9,7 +9,7 @@
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        //ÕÒµ½µ¹ÊıµÚn¸ö½Úµã,ÉèÖÃÁ½¸öÖ¸Õë£¬µÚÒ»¸öÏÈ×ßn²½
+        //æ‰¾åˆ°å€’æ•°ç¬¬nä¸ªèŠ‚ç‚¹,è®¾ç½®ä¸¤ä¸ªæŒ‡é’ˆï¼Œç¬¬ä¸€ä¸ªå…ˆèµ°næ­¥
         ListNode* pQuick = head;
         int step = n;
         while (step > 0){
@@ -17,17 +17,17 @@ public:
                 pQuick = pQuick->next;
                 --step;
             }
-            else return head->next;   //Ö¤Ã÷stepµÈÓÚÁ´±í³¤¶È£¬ÔòÕâÖÖÇé¿öÏÂÉ¾³ıhead£¬Ôò·µ»Øhead->next¼´¿É
+            else return head->next;   //è¯æ˜stepç­‰äºé“¾è¡¨é•¿åº¦ï¼Œåˆ™è¿™ç§æƒ…å†µä¸‹åˆ é™¤headï¼Œåˆ™è¿”å›head->nextå³å¯
         }
 
-        //¿ªÊ¼Í¬Ê±ÒÆ¶¯Á½¸öÖ¸Õë£¬µ±quickÖ¸Õëµ½´ïÁ´±íÎ²¶Ë½ÚµãµÄÊ±ºò£¬slowÖ¸Õëµ½´ïµ¹ÊıµÚn+1¸ö½Úµã
+        //å¼€å§‹åŒæ—¶ç§»åŠ¨ä¸¤ä¸ªæŒ‡é’ˆï¼Œå½“quickæŒ‡é’ˆåˆ°è¾¾é“¾è¡¨å°¾ç«¯èŠ‚ç‚¹çš„æ—¶å€™ï¼ŒslowæŒ‡é’ˆåˆ°è¾¾å€’æ•°ç¬¬n+1ä¸ªèŠ‚ç‚¹
         ListNode* pSlow = head;
         while (pQuick->next != NULL){
             pQuick = pQuick->next;
             pSlow = pSlow->next;
         }
 
-        //Ö´ĞĞÉ¾³ıslowµÄ²Ù×÷
+        //æ‰§è¡Œåˆ é™¤slowçš„æ“ä½œ
         pSlow->next = pSlow->next->next;
 
         return head;
