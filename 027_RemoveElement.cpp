@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        int len = 0;    //记录前面有多少个val，以决定后面不相等时候的向前赋值多少位
+        int len = 0;    //璁板綍鍓嶉潰鏈夊灏戜釜val锛屼互鍐冲畾鍚庨潰涓嶇浉绛夋椂鍊欑殑鍚戝墠璧嬪�煎灏戜綅
         for (int i = 0; i < nums.size(); ++i){
             if (nums[i] == val){
                 len++;
