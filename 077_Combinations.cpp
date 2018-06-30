@@ -16,7 +16,7 @@ public:
         return res;
     }
 private:
-    //ѭ���ӵݹ飬���ݷ�
+    //Ñ­»·¼ÓµÝ¹é£¬»ØËÝ·¨
     void combinations(int n, int k, int start, int num, vector<vector<int>>& res, vector<int>& temp)
     {
         if (num == k)
