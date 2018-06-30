@@ -1,11 +1,11 @@
-//ÀûÓÃ¶ş·Ö²éÕÒ£¬Õâ¸öreturn lowµÄÕâÖÖ·½Ê½ÄÜ½â¾ö²åÈëÎ»ÖÃÎÊÌâ¡£
+//åˆ©ç”¨äºŒåˆ†æŸ¥æ‰¾ï¼Œè¿™ä¸ªreturn lowçš„è¿™ç§æ–¹å¼èƒ½è§£å†³æ’å…¥ä½ç½®é—®é¢˜ã€‚
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
         int low = 0;
         int high = nums.size() - 1;
         while (low <= high){
-            int middle = low + (high - low) / 2;    //Ò»¶¨ÒªÊ¹ÓÃÕâÖÖ·½Ê½£¬ÒòÎªÈç¹ûÊ¹ÓÃlow+high¿ÉÄÜ³¬¹ıint·¶Î§
+            int middle = low + (high - low) / 2;    //ä¸€å®šè¦ä½¿ç”¨è¿™ç§æ–¹å¼ï¼Œå› ä¸ºå¦‚æœä½¿ç”¨low+highå¯èƒ½è¶…è¿‡intèŒƒå›´
             if (target > nums[middle]){
                 low = middle + 1;
             }
