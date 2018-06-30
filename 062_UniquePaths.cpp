@@ -5,7 +5,7 @@ using namespace std;
 class Solution
 {
 public:
-    //动态规划问题，找到位置与前面位置的关系
+    //鍔ㄦ�佽鍒掗棶棰橈紝鎵惧埌浣嶇疆涓庡墠闈綅缃殑鍏崇郴
     int uniquePaths(int m, int n)
     {
         if (m <= 0 || n <= 0)
