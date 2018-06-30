@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    //利用计数排序的思想
+    //脌没脫脙录脝脢媒脜脜脨貌碌脛脣录脧毛
     void sortColors(vector<int>& nums) {
         vector<int> Mymap(3,0);
         for (int i = 0; i < nums.size(); ++i) {
