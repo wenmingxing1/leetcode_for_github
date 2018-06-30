@@ -9,7 +9,7 @@
  */
 class Solution {
 public:
-    //递归版本
+    //閫掑綊鐗堟湰
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
         inorderTraversal(root, res);
@@ -27,7 +27,7 @@ private:
     }
 };
 
-//以后补上非递归版本
+//浠ュ悗琛ヤ笂闈為�掑綊鐗堟湰
 class Solution2
 {
 
