@@ -1,4 +1,4 @@
-//½£Ö¸offer28Ìâ
+//å‰‘æŒ‡offer28é¢˜
 class Solution {
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
@@ -22,7 +22,7 @@ private:
         }
     }
 
-    //ÅĞ¶ÏÊÇ·ñÓĞÖØ¸´£¬Èç¹ûbeginµ½iÖĞÒÑ¾­ÓĞÁËÓëiÏàÍ¬µÄÔªËØ£¬Ôò²»ĞèÒª½»»»beginÓëiÔªËØÁË£¬ÒòÎªÖ®Ç°ÒÑ¾­½»»»¹ıÁË
+    //åˆ¤æ–­æ˜¯å¦æœ‰é‡å¤ï¼Œå¦‚æœbeginåˆ°iä¸­å·²ç»æœ‰äº†ä¸iç›¸åŒçš„å…ƒç´ ï¼Œåˆ™ä¸éœ€è¦äº¤æ¢beginä¸iå…ƒç´ äº†ï¼Œå› ä¸ºä¹‹å‰å·²ç»äº¤æ¢è¿‡äº†
     bool duplicate(vector<int>& nums, int begin, int end){
         for (int i = begin; i < end; ++i){
             if (nums[i] == nums[end])
