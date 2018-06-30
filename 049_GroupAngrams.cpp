@@ -14,11 +14,11 @@ public:
             vector<int> count(26,0);
             for (auto ch : s) ++count[ch-'a'];
 
-            //½«count×ª»¯Îªstring
+            //å°†countè½¬åŒ–ä¸ºstring
             string temp;
             for (auto i : count) temp += to_string(i);
 
-            mymap[temp].push_back(s);   //Ã¿¸ö¶ÔÓ¦ÓÚ×ª»¯ÎªstringµÄ×Ö·û´®¶¼Ñ¹Èëµ½ÏàÍ¬µÄmapÎ»ÖÃÖĞ
+            mymap[temp].push_back(s);   //æ¯ä¸ªå¯¹åº”äºè½¬åŒ–ä¸ºstringçš„å­—ç¬¦ä¸²éƒ½å‹å…¥åˆ°ç›¸åŒçš„mapä½ç½®ä¸­
         }
 
         for (auto a : mymap) {
