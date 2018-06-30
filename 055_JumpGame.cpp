@@ -6,7 +6,7 @@ class Solution{
 public:
     bool canJump(vector<int>& nums){
         int length = nums.size();
-        int reach = 0;  //记录能到达的最远位置
+        int reach = 0;  //录脟脗录脛脺碌陆麓茂碌脛脳卯脭露脦禄脰脙
         for (int i = 0; i < length-1 && i <= reach; ++i){
             reach = max(i+nums[i], reach);
         }
