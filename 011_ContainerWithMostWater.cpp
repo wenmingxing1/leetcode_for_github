@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    /*暴力法，超时*/
+    /*鏆村姏娉曪紝瓒呮椂*/
     /*
     int maxArea(vector<int>& height) {
         int resMax = 0;
@@ -26,7 +26,7 @@ public:
         int newMax = 0;
         int left = 0;
         int right = height.size()-1;
-        //以宽度最大开始，后续之后变高的时候才进行运算，其他的跳过
+        //浠ュ搴︽渶澶у紑濮嬶紝鍚庣画涔嬪悗鍙橀珮鐨勬椂鍊欐墠杩涜杩愮畻锛屽叾浠栫殑璺宠繃
         while (left < right) {
             int h = min(height[left], height[right]);
             newMax = (right-left) * h;
