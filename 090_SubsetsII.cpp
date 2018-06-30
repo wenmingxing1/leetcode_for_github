@@ -17,7 +17,7 @@ private:
     void genSubsets(vector<int>& nums, int start, vector<vector<int>>& res, vector<int>& temp) {
         res.push_back(temp);
         for (int i = start; i < nums.size(); ++i) {
-            if (i == start || (i > start && nums[i] != nums[i-1])) {    //进行去重处理
+            if (i == start || (i > start && nums[i] != nums[i-1])) {    //陆酶脨脨脠楼脰脴麓娄脌铆
                 temp.push_back(nums[i]);
                 genSubsets(nums, i+1, res, temp);
                 temp.pop_back();
