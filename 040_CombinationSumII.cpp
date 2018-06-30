@@ -22,7 +22,7 @@ private:
         for (int i = start; i < candidates.size(); ++i) {
 
             if (target >= candidates[i]) {
-                //只对第一个进行递归，如果之前出现过，则跳过
+                //鍙绗竴涓繘琛岄�掑綊锛屽鏋滀箣鍓嶅嚭鐜拌繃锛屽垯璺宠繃
                 if ( i > start && candidates[i] == candidates[i-1]) continue;
                 temp.push_back(candidates[i]);
                 combinationCore(candidates, target-candidates[i], res, temp, i+1);
