@@ -8,7 +8,7 @@ class Solution {
 public:
     string addBinary(string a, string b) {
         string res;
-        int carry = '0';   //¼ÇÂ¼½øÎ»
+        int carry = '0';   //è®°å½•è¿›ä½
         int index1 = a.size()-1;
         int index2 = b.size()-1;
 
@@ -16,8 +16,8 @@ public:
             int a_num = index1 >= 0 ? a[index1--]-'0' : 0;
             int b_num = index2 >= 0 ? b[index2--]-'0' : 0;
             int sum = a_num + b_num + carry;
-            carry = sum / 2;    //Èı¸öÏà¼Ó¶Ô2È¡ÉÌµÃµ½½øÎ»
-            sum = sum % 2;  //¶Ô2È¡Ä£µÃµ½±¾Î»µÄ´óĞ¡
+            carry = sum / 2;    //ä¸‰ä¸ªç›¸åŠ å¯¹2å–å•†å¾—åˆ°è¿›ä½
+            sum = sum % 2;  //å¯¹2å–æ¨¡å¾—åˆ°æœ¬ä½çš„å¤§å°
             res = to_string(sum) + res;
         }
 
