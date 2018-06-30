@@ -1,5 +1,5 @@
-//ÏÈ¶ÔÃ¿Ò»ĞĞ½øĞĞÅĞ¶Ï£¨ÕâÀïÊÇË³ĞòÅĞ¶Ï£©£¬ÔÚ¶Ô¶ÔÓ¦µÄĞĞ½øĞĞ¶ş·Ö²éÕÒ£»
-//Ò²¿ÉÒÔ¶ÔÕû¸ö¾ØÕóµ±×öÒ»¸öË³ĞòÊı×éÖ±½Ó¶ş·Ö²éÕÒ£»
+//å…ˆå¯¹æ¯ä¸€è¡Œè¿›è¡Œåˆ¤æ–­ï¼ˆè¿™é‡Œæ˜¯é¡ºåºåˆ¤æ–­ï¼‰ï¼Œåœ¨å¯¹å¯¹åº”çš„è¡Œè¿›è¡ŒäºŒåˆ†æŸ¥æ‰¾ï¼›
+//ä¹Ÿå¯ä»¥å¯¹æ•´ä¸ªçŸ©é˜µå½“åšä¸€ä¸ªé¡ºåºæ•°ç»„ç›´æ¥äºŒåˆ†æŸ¥æ‰¾ï¼›
 
 class Solution {
 public:
@@ -14,13 +14,13 @@ public:
         int col = n - 1;
 
         while (row < m && col >= 0) {
-            if (matrix[row][col] == target)     //ÕÒµ½Ö¸¶¨Öµ
+            if (matrix[row][col] == target)     //æ‰¾åˆ°æŒ‡å®šå€¼
                 return true;
-            //ÕÒµ½¶ÔÓ¦µÄĞĞ
+            //æ‰¾åˆ°å¯¹åº”çš„è¡Œ
             else if (matrix[row][col] > target) {
                 return searchVector(matrix[row], target);
             }
-            //È¥³ıĞĞ
+            //å»é™¤è¡Œ
             else if (matrix[row][col] < target) {
                 ++row;
             }
@@ -30,7 +30,7 @@ public:
 
     }
 private:
-    //¶ş·Ö²éÕÒÒ»¸övector
+    //äºŒåˆ†æŸ¥æ‰¾ä¸€ä¸ªvector
     bool searchVector(vector<int> vec, int target) {
         int left = 0;
         int right = vec.size() - 1;
