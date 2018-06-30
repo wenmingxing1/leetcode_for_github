@@ -14,7 +14,7 @@ public:
             mid = start + (end - start) / 2;
             if (nums[mid] == target) return true;
 
-            //无法判断属于哪边
+            //脦脼路篓脜脨露脧脢么脫脷脛脛卤脽
             if (nums[mid] == nums[start] && nums[mid] == nums[end])
                 return searchLoop(nums, target);
 
