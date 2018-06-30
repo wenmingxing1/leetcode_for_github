@@ -10,7 +10,7 @@ struct ListNode {
 
 };
 
-/*==================ÀûÓÃ¿ìÂýÖ¸Õë======================*/
+/*==================åˆ©ç”¨å¿«æ…¢æŒ‡é’ˆ======================*/
 class Solution {
 public:
     ListNode* FindFirstCommonNode( ListNode* pHead1, ListNode* pHead2) {
@@ -21,11 +21,11 @@ public:
 
         ListNode* pNode1 = pHead1;
         ListNode* pNode2 = pHead2;
-        while (pNode1 != NULL){		//µÃµ½pHead1µÄsize
+        while (pNode1 != NULL){		//å¾—åˆ°pHead1çš„size
             pHead1_size++;
             pNode1 = pNode1->next;
         }
-        while (pNode2 != NULL){		//µÃµ½pHead2µÄsize
+        while (pNode2 != NULL){		//å¾—åˆ°pHead2çš„size
             pHead2_size++;
             pNode2 = pNode2->next;
         }
@@ -62,7 +62,7 @@ public:
     }
 };
 
-/*=================ÀûÓÃÕ»=======================*/
+/*=================åˆ©ç”¨æ ˆ=======================*/
 class Solution2
 {
 public:
