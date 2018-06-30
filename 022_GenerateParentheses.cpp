@@ -20,12 +20,12 @@ private:
             return;
         }
 
-        //×óÀ¨ºÅ¸öÊý´óÓÚ0Ôò¿ÉÒÔ·Å×óÀ¨ºÅ
+        //å·¦æ‹¬å·ä¸ªæ•°å¤§äºŽ0åˆ™å¯ä»¥æ”¾å·¦æ‹¬å·
         if (left > 0) {
             generateParenthesisCore(left-1, right, str+'(', res);
         }
 
-        //ÓÒÀ¨ºÅ¸öÊý´óÓÚ×óÀ¨ºÅ¸öÊý£¬Ôò¿ÉÒÔ·ÅÓÒÀ¨ºÅ
+        //å³æ‹¬å·ä¸ªæ•°å¤§äºŽå·¦æ‹¬å·ä¸ªæ•°ï¼Œåˆ™å¯ä»¥æ”¾å³æ‹¬å·
         if (right > left) {
             generateParenthesisCore(left, right-1, str+')', res);
         }
