@@ -18,7 +18,7 @@ public:
         return res;
     }
 private:
-    //level用来记录第几个数字
+    //level脫脙脌麓录脟脗录碌脷录赂赂枚脢媒脳脰
     void letterCombinationsCore(string digits, vector<string>& dict, int level, string& out, vector<string>& res) {
         if (level == digits.size()) {
             res.push_back(out);
