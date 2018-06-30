@@ -8,7 +8,7 @@
  */
 class Solution {
 public:
-    //½£Ö¸offer17Ìâ£ººÏ²¢Á½¸öÅÅĞòÁ´±í£¬²ÉÓÃµİ¹éµÄ·½Ê½
+    //å‰‘æŒ‡offer17é¢˜ï¼šåˆå¹¶ä¸¤ä¸ªæ’åºé“¾è¡¨ï¼Œé‡‡ç”¨é€’å½’çš„æ–¹å¼
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         if (l1 == NULL)
             return l2;
