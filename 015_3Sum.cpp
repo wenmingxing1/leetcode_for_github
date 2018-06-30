@@ -16,7 +16,7 @@ public:
                     temp.push_back(nums[i]);
                     res.push_back(temp);
                     ++start; --end;
-                    //跳过重复元素
+                    //璺宠繃閲嶅鍏冪礌
                     while (start < end && nums[start] == nums[start-1]) ++start;
                     while (start < end && nums[end] == nums[end+1]) --end;
                 }
@@ -29,7 +29,7 @@ public:
 
             }
 
-            //跳过重复元素
+            //璺宠繃閲嶅鍏冪礌
             while (i < end && nums[i+1] == nums[i]) ++i;
         }
         return res;
