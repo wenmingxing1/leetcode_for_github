@@ -1,4 +1,4 @@
-//��̬�滮��⣬ά��һ��ȫ�����ţ�һ���ֲ�����
+//动态规划求解，维护一个全局最优，一个局部最优
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
