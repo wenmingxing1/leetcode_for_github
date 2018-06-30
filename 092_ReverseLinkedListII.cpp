@@ -12,17 +12,17 @@ public:
         if (head == NULL)
             return NULL;
 
-        ListNode* newHead = new ListNode(0);    //±ØÐëÒªnewÒ»¸öÍêÕûµÄÊý¾Ý½á¹¹
+        ListNode* newHead = new ListNode(0);    //å¿…é¡»è¦newä¸€ä¸ªå®Œæ•´çš„æ•°æ®ç»“æž„
         newHead->next = head;
         ListNode* pre = newHead;
         for (int i = 0; i < m-1; ++i){
             pre = pre->next;
         }
-        //´ËÊ±preÎªµÚm¸ö½ÚµãµÄÇ°Ò»¸ö½Úµã
+        //æ­¤æ—¶preä¸ºç¬¬mä¸ªèŠ‚ç‚¹çš„å‰ä¸€ä¸ªèŠ‚ç‚¹
 
         ListNode* pNode = pre->next;
 
-        //²»¶Ï½«ÏÂÒ»½Úµã²åÈëµ½preÓëpre->nextÖ®¼ä
+        //ä¸æ–­å°†ä¸‹ä¸€èŠ‚ç‚¹æ’å…¥åˆ°preä¸Žpre->nextä¹‹é—´
         for (int i = 0; i < n-m; ++i){
             ListNode* pNext = pNode->next;
             pNode->next = pNext->next;
