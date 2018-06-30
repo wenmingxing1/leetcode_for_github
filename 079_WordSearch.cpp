@@ -11,10 +11,10 @@ public:
 
         if (row < 1 || col < 1 || word.size() == 0) return false;
 
-        //¼ÇÂ¼ÊÇ·ñ±»·ÃÎÊ
+        //è®°å½•æ˜¯å¦è¢«è®¿é—®
         vector<vector<bool>> visited(row, vector<bool>(col, false));
 
-        int wordIndex = 0;  //¼ÇÂ¼wordÎ»ÖÃ
+        int wordIndex = 0;  //è®°å½•wordä½ç½®
 
         for (int i = 0; i < row; ++i) {
             for (int j = 0; j < col; ++j) {
@@ -28,7 +28,7 @@ public:
 private:
     bool existCore(vector<vector<char>>& board, int row, int col,
                    int rowIndex, int colIndex, string& word, int& wordIndex, vector<vector<bool>>& visited) {
-        //µİ¹é½áÊøÌõ¼ş
+        //é€’å½’ç»“æŸæ¡ä»¶
         if (word[wordIndex] == '\0') return true;
 
         bool found = false;
