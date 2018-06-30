@@ -13,7 +13,7 @@ public:
         int colstart = 0;
         int rowstart = 0;
         int index = 1;
-        vector<vector<int>> res(n, vector<int>(n,0));   //³õÊ¼»¯Ò»¸ö¶þÎ¬Êý×é
+        vector<vector<int>> res(n, vector<int>(n,0));   //Â³ÃµÃŠÂ¼Â»Â¯Ã’Â»Â¸Ã¶Â¶Ã¾ÃŽÂ¬ÃŠÃ½Ã—Ã©
 
         while (index <= n*n)
         {
