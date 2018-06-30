@@ -8,16 +8,16 @@
  */
 class Solution {
 public:
-    //½£Ö¸offerÉÏÔ­Ìâ£¬Óë83×ö±È½Ï£¬ÐèÒª¿¼ÂÇhead±»É¾³ýµÄ¿ÉÄÜÐÔ
+    //å‰‘æŒ‡offerä¸ŠåŽŸé¢˜ï¼Œä¸Ž83åšæ¯”è¾ƒï¼Œéœ€è¦è€ƒè™‘headè¢«åˆ é™¤çš„å¯èƒ½æ€§
     ListNode* deleteDuplicates(ListNode* head) {
-        ListNode* first = new ListNode(-1);     //¸³ÖµÎª-1£¬²¢²»²ÎÓë±È½Ï
+        ListNode* first = new ListNode(-1);     //èµ‹å€¼ä¸º-1ï¼Œå¹¶ä¸å‚ä¸Žæ¯”è¾ƒ
         first->next = head;
         ListNode* pNode = head;
-        ListNode* pre = first;  //ÔÚheadÇ°ÉèÒ»¸ö½Úµã
+        ListNode* pre = first;  //åœ¨headå‰è®¾ä¸€ä¸ªèŠ‚ç‚¹
 
         while (pNode != NULL && pNode->next != NULL){
             if (pNode->val == pNode->next->val){
-                //Ìø¹ýÏàÍ¬½áµã
+                //è·³è¿‡ç›¸åŒç»“ç‚¹
                 int val = pNode->val;
                 while (pNode != NULL && val == pNode->val){
                     pNode = pNode->next;
