@@ -16,7 +16,7 @@ public:
         return res;
     }
 private:
-    //循环加递归构成回溯法
+    //脩颅禄路录脫碌脻鹿茅鹿鹿鲁脡禄脴脣脻路篓
     void getSubsets(vector<int>num, vector<vector<int>>& res, vector<int>& temp, int start)
     {
         res.push_back(temp);
