@@ -12,7 +12,7 @@ public:
         int length2 = needle.size();
         if (length2 == 0) return 0;
 
-        //index1不必遍历到最后
+        //index1虏禄卤脴卤茅脌煤碌陆脳卯潞贸
         while (index1 < (length1-length2+1) && index2 < length2) {
             if (haystack[index1] == needle[index2]) {
                 int res = index1;
