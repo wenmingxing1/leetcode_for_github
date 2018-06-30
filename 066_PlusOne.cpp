@@ -11,13 +11,13 @@ public:
 private:
     // 0 <= digit <= 9
     void add(vector<int> &digits, int digit) {
-        int c = digit; // carry, ½øÎ»
-        for (auto it = digits.rbegin(); it != digits.rend(); ++it) {    //·´Ïòµü´úÆ÷
+        int c = digit; // carry, è¿›ä½
+        for (auto it = digits.rbegin(); it != digits.rend(); ++it) {    //åå‘è¿­ä»£å™¨
             *it += c;
-            c = *it / 10;       //ÅĞ¶ÏÊÇ·ñÓĞ½øÎ»£¬Èç¹ûÓĞ½øÎ»Ôò½«½øÎ»×÷ÎªÏÂÒ»Î»µÄ¼ÓÊı
+            c = *it / 10;       //åˆ¤æ–­æ˜¯å¦æœ‰è¿›ä½ï¼Œå¦‚æœæœ‰è¿›ä½åˆ™å°†è¿›ä½ä½œä¸ºä¸‹ä¸€ä½çš„åŠ æ•°
             *it %= 10;
         }
-        if (c > 0)      //Èç¹û×îºó(×î¸ßÎ»)ÓĞ½øÎ»£¬ÔòÔÚbegin´¦²åÈë1
+        if (c > 0)      //å¦‚æœæœ€å(æœ€é«˜ä½)æœ‰è¿›ä½ï¼Œåˆ™åœ¨beginå¤„æ’å…¥1
             digits.insert(digits.begin(), 1);
     }
 };
