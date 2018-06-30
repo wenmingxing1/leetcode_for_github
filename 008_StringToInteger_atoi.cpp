@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    //½£Ö¸offer49£¬µ«¿¼ÂÇµÄÇé¿ö¸ü¶à
+    //å‰‘æŒ‡offer49ï¼Œä½†è€ƒè™‘çš„æƒ…å†µæ›´å¤š
     int myAtoi(string str) {
         int size = str.size();
         if (size == 0){
@@ -14,12 +14,12 @@ public:
 
         string::iterator iter = str.begin();
 
-        while (*iter == ' ')    //¶ÔÓÚ¿Õ¸ñµÄ´¦Àí
+        while (*iter == ' ')    //å¯¹äºç©ºæ ¼çš„å¤„ç†
             iter++;
 
         bool isPositive = true;
 
-        if (*iter == '-'){      //¶ÔÓÚÕı¸ººÅµÄ´¦Àí
+        if (*iter == '-'){      //å¯¹äºæ­£è´Ÿå·çš„å¤„ç†
             isPositive = false;
             iter++;
         }
@@ -27,8 +27,8 @@ public:
             iter++;
         }
 
-        double number = 0;      //doubleÊÇÎªÁË·½±ãÔ½½ç´¦Àí
-        while (iter != str.end()){      //³£¹æ²Ù×÷
+        double number = 0;      //doubleæ˜¯ä¸ºäº†æ–¹ä¾¿è¶Šç•Œå¤„ç†
+        while (iter != str.end()){      //å¸¸è§„æ“ä½œ
             if (*iter >= '0' && *iter <= '9'){
                 number = number * 10 + *iter - '0';
                 iter++;
@@ -37,7 +37,7 @@ public:
                 break;
         }
 
-        if (number > INT_MAX){      //Ô½½ç´¦Àí£¬ºÍÕı¸ººÅÅĞ¶Ï
+        if (number > INT_MAX){      //è¶Šç•Œå¤„ç†ï¼Œå’Œæ­£è´Ÿå·åˆ¤æ–­
             if (isPositive)
                 return INT_MAX;
             else
