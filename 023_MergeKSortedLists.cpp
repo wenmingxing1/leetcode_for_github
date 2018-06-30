@@ -6,7 +6,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-//ÀûÓÃmergeTwoListsº¯ÊýµÄ·½·¨
+//åˆ©ç”¨mergeTwoListså‡½æ•°çš„æ–¹æ³•
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
@@ -27,7 +27,7 @@ public:
 
     }
 private:
-    //ºÏ²¢Á½¸öÁ´±í
+    //åˆå¹¶ä¸¤ä¸ªé“¾è¡¨
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2){
         if (list1 == NULL)
             return list2;
@@ -57,7 +57,7 @@ private:
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-//ÀûÓÃ×îÐ¡¶Ñ,²»ÖªµÀÎªÊ²Ã´ÓÐµÄ²âÊÔÑùÀý²»ÄÜÍ¨¹ý
+//åˆ©ç”¨æœ€å°å †,ä¸çŸ¥é“ä¸ºä»€ä¹ˆæœ‰çš„æµ‹è¯•æ ·ä¾‹ä¸èƒ½é€šè¿‡
 static bool HeapCompare(ListNode* list1, ListNode* list2){
     return list1->val > list2->val;
 }
