@@ -4,7 +4,7 @@ public:
         int res = 0;
         int index = s.size()-1;
 
-        //先取出最后的空格
+        //脧脠脠隆鲁枚脳卯潞贸碌脛驴脮赂帽
         while (index >= 0 && s[index]==' ')
             --index;
 
