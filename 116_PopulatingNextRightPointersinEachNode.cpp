@@ -14,7 +14,7 @@ struct TreeLinkNode {
 class Solution {
 public:
     void connect(TreeLinkNode* root) {
-        if (root == nullptr) return nullptr;
+        if (root == nullptr) return;
         queue<TreeLinkNode*> help;
         help.push(root);
 
