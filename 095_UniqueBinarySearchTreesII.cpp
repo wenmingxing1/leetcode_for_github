@@ -19,11 +19,11 @@ public:
     }
 private:
     vector<TreeNode*> generateTreesCore(int start, int end) {
-        if (start < end) {
-            vector<TreeNode*> res;
-            for (int index = start; i <= end; ++i) {
-                vector<TreeNode*> left = generateTreeCore(start, index-1);
-                vector<TreeNode*> right = generateTreeCore(index+1, end);
+        vector<TreeNode*> res;
+        if (start <= end) {
+            for (int index = start; index <= end; ++index) {
+                vector<TreeNode*> left = generateTreesCore(start, index-1);
+                vector<TreeNode*> right = generateTreesCore(index+1, end);
                 for (auto l : left) {
                     for (auto r : right) {
                         TreeNode* root = new TreeNode(index);
@@ -34,6 +34,7 @@ private:
                 }
             }
         }
+        else res.push_back(nullptr);
         return res;
     }
 };
